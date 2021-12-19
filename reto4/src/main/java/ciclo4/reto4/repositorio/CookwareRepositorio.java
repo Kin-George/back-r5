@@ -33,8 +33,8 @@ public class CookwareRepositorio {
     }
 
     //reto 5
-    public List<Cookware> getByPrice(double price){
-        return repository.findByPrice(price);
+    public List<Cookware> getByPriceLessThanEqual(double price){
+        return repository.findByPriceLessThanEqual(price);
     }
     
     public List<Cookware> getByDescriptionContains(String description){

@@ -7,7 +7,8 @@ import java.util.List;
 
 public interface InterfaceCookware extends MongoRepository<Cookware, String> {
     // reto 5
-    public List<Cookware> findByPrice(double price);
+    //public List<Cookware> findByPrice(double price);
+    public List<Cookware> findByPriceLessThanEqual(double price);
     public List<Cookware> findByDescriptionContainingIgnoreCase(String description);
     
 }

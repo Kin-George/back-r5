@@ -83,8 +83,8 @@ public class CookwareService {
     }
 
     //reto 5
-    public List<Cookware> getByPrice(double price){
-        return clotheRepository.getByPrice(price);
+    public List<Cookware> getByPriceLessThanEqual(double price){
+        return clotheRepository.getByPriceLessThanEqual(price);
     }
 
     public List<Cookware> getByDescriptionContains(String description){
